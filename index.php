@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Online Marriage Regitration System :: Home Page</title>
+    <title>Online Marriage Registration System :: Home Page</title>
 
     <script type="application/x-javascript">
     addEventListener("load", function() {
