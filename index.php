@@ -28,25 +28,18 @@
     <!-- <img src="/images/nepal-govt.png" alt="Nepal gov Logo" height="103" width="111"> -->
     <div class="image-1-wrapper">
         <img class="image-1-icon" alt="" src="images/nepal-govt.png"/>
+		<p>Government of Nepal</p>
+		<p>Ministry of Home Affairs</p>
     </div>
-    <div class="w3ls-icons">
+    <div class="w3ls-head">
+        <h1>Online Marriage Regitration System</h1>
+    </div>
+	<div class="w3ls-icons">
         <ul style="font-size: 30px">
             <li><a href="admin/login.php"> Admin</a></li>
             <li style="padding-left: 20px"><a href="user/login.php"> User</a></li>
         </ul>
     </div>
-    <div class="w3ls-head">
-        <h1>Online Marriage Regitration System</h1>
-    </div>
-    <div class="w3ls-content">
-        <div class="w3ls-headding">
-            <h2> <img src="images/5b9d320a2000002d00fdde0f.jpeg"></h2>
-            <p>We are launching the most awesome site ever. It's gonna be legendary</p>
-        </div>
-
-    </div>
-
-    <footer>&copy; 2020 Online Marriage Registration System</footer>
 </body>
 
 </html>
