@@ -14,7 +14,7 @@
     }
     </script>
     <!--//Meta tag Keywords -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" media="all" />
     <!--stylesheet-->
     <link rel="stylesheet" href="css/font-awesome.css">
     <!--font_aswesome_icons-->
@@ -27,7 +27,7 @@
 <body>
     <!-- <img src="/images/nepal-govt.png" alt="Nepal gov Logo" height="103" width="111"> -->
     <div class="image-1-wrapper">
-        <img class="image-1-icon" alt="" src="/images/nepal-govt.png" />
+        <img class="image-1-icon" alt="" src="images/nepal-govt.png"/>
     </div>
     <div class="w3ls-icons">
         <ul style="font-size: 30px">

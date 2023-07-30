@@ -4,12 +4,13 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
-/* body{
-	background:url(../images/bg1.jpg)0px 0px no-repeat;
+body {
+	background-color: #93D0F2;
 	background-size: cover;
 	background-position: 50% 50%;
 	min-height: 700px;
-} */
+}
+
 body a {
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -82,7 +83,13 @@ footer a {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	padding: 45px 0 45px 0;
-	color: #fff;
+}
+
+.image-1-icon,
+.image-1-wrapper {
+	text-align: center;
+	width: 111px;
+	height: 103px;
 }
 
 .w3ls-content {
