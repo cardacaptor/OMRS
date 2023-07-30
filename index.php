@@ -25,7 +25,6 @@
 </head>
 
 <body>
-    <!-- <img src="/images/nepal-govt.png" alt="Nepal gov Logo" height="103" width="111"> -->
     <div class="image-1-wrapper">
         <img class="image-1-icon" alt="" src="images/nepal-govt.png"/>
 		<p>Government of Nepal</p>
@@ -37,8 +36,18 @@
     </div>
     <div class="w3ls-icons">
         <ul style="font-size: 30px">
-            <li><a href="admin/login.php"> Admin</a></li>
-            <li style="padding-left: 20px"><a href="user/login.php"> User</a></li>
+        	<li>
+				<div class="box-shape">
+					<img src="admin/images/images.png" alt="">
+				</div>
+				<a href="admin/login.php"> Admin</a>
+			</li>
+            <li style="padding-left: 200px">
+				<div class="box-shape">
+					<img src="admin/images/images.png" alt="">
+				</div>
+				<a href="user/login.php"> User</a>
+		</li>
         </ul>
     </div>
 </body>
