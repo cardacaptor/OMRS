@@ -30,13 +30,8 @@
 		<p>Government of Nepal</p>
 		<p>Ministry of Home Affairs</p>
     </div>
-
     <div class="w3ls-head">
-<<<<<<< HEAD
         <h1 style="font-family: Microsoft Yahei; color:black;">Online Marriage Registration System</h1>
-=======
-        <h1 >Online Marriage Regitration System</h1>
->>>>>>> 5be581411bc550d2aa0cc09db14482260b846c4b
     </div>
     <div class="w3ls-icons">
         <ul style="font-size: 30px">
