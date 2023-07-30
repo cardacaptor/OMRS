@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Online Marriage Regitration System :: Home Page</title>
+    <title>Online Marriage Registration System :: Home Page</title>
 
     <script type="application/x-javascript">
     addEventListener("load", function() {
@@ -33,7 +33,7 @@
     </div>
 
     <div class="w3ls-head">
-        <h1 style="font-family: Microsoft Yahei; color:black;">Online Marriage Regitration System</h1>
+        <h1 style="font-family: Microsoft Yahei; color:black;">Online Marriage Registration System</h1>
     </div>
     <div class="w3ls-icons">
         <ul style="font-size: 30px">
