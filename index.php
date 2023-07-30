@@ -18,7 +18,7 @@
     <!--stylesheet-->
     <link rel="stylesheet" href="css/font-awesome.css">
     <!--font_aswesome_icons-->
-    <link href="//fonts.googleapis.com/css?family=Microsoft Yahei" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!--online-fonts-->
     <link href="//fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <!--online-fonts-->
@@ -32,7 +32,7 @@
     </div>
 
     <div class="w3ls-head">
-        <h1 style="font-family: Microsoft Yahei; color:black;">Online Marriage Regitration System</h1>
+        <h1 >Online Marriage Regitration System</h1>
     </div>
     <div class="w3ls-icons">
         <ul style="font-size: 30px">
