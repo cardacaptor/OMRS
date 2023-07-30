@@ -7,9 +7,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 body {
 	background-color: #93D0F2;
 	position: relative;
-	top: 150px;
+	top: 80px;
 	bottom: 0;
 }
+
 body p {
 	color: #000;
 	font-family: Roboto;
@@ -29,7 +30,8 @@ body a {
 	text-decoration: none;
 }
 
-input[type="button"], input[type="submit"] {
+input[type="button"],
+input[type="submit"] {
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -38,7 +40,12 @@ input[type="button"], input[type="submit"] {
 	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 0;
 	font-weight: 400;
 	transition: 0.5s all;
@@ -86,6 +93,7 @@ footer a {
 
 /*--/Reset code--*/
 .w3ls-head h1 {
+
 	color: #000;
 	font-family: Roboto;
 	font-size: 48px;
@@ -93,28 +101,41 @@ footer a {
 	font-weight: 300;
 	line-height: normal;
 	text-align: center;
-	padding: 45px 0 45px 0;
+	padding: 150px 0 45px 0;
 }
 
 .image-1-wrapper {
 	text-align: center;
+
 }
 
 .image-1-icon {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 111px;
-	height: 103px;
+	width: 120px;
+	height: 120px;
 	object-fit: cover;
 }
 
-.box-shape{
+.box-shape {
 	height: 100px;
 	width: 100px;
-	background-color: white;
-	border-radius: 12px;
+	border-radius: 12px !important;
+	background: #F5F5F5;
+	position: relative;
+	margin-bottom: 18px;
 }
+
+.box-shape img {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
 
 .w3ls-content {
 	width: 40%;
@@ -189,6 +210,7 @@ footer a {
 	text-align: center;
 	margin: 40px 0 0 0;
 }
+
 
 .w3ls-icons ul li a i {
 	font-size: 15px;
