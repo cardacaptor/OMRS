@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Online Marriage Regitration System :: Home Page</title>
+    <title>Online Marriage Registration System :: Home Page</title>
 
     <script type="application/x-javascript">
     addEventListener("load", function() {
@@ -30,9 +30,12 @@
 		<p>Government of Nepal</p>
 		<p>Ministry of Home Affairs</p>
     </div>
-
     <div class="w3ls-head">
+<<<<<<< HEAD
+        <h1 style="font-family: Microsoft Yahei; color:black;">Online Marriage Registration System</h1>
+=======
         <h1 >Online Marriage Registration System</h1>
+>>>>>>> 7ab96d5ec744636e1df08b449e292aa6a9dd516d
     </div>
     <div class="w3ls-icons">
         <ul style="font-size: 30px">
