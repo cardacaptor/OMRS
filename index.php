@@ -30,15 +30,13 @@
 		<p>Government of Nepal</p>
 		<p>Ministry of Home Affairs</p>
     </div>
-
     <div class="w3ls-head">
-        <h1 >Online Marriage Registration System</h1>
+        <h1 style="font-family: Microsoft Yahei; color:black;">Online Marriage Registration System</h1>
     </div>
     <div class="w3ls-icons">
         <ul style="font-size: 30px">
         	<li>
-				
-				<a href="admin/login.php"> 
+				<a class="box" href="admin/login.php"> 
                     <div class="box-shape">
 					    <img src="images/admin-icon.svg" alt="">
 				    </div>
@@ -46,8 +44,7 @@
                 </a>
 			</li>
             <li style="padding-left: 200px">
-				
-				<a href="user/login.php"> 
+				<a class="box" href="user/login.php"> 
                     <div class="box-shape">
 					    <img src="images/user-icon.svg" alt="">
 				    </div>

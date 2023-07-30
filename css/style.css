@@ -122,7 +122,7 @@ footer a {
 	height: 100px;
 	width: 100px;
 	border-radius: 12px !important;
-	background: #F5F5F5;
+	background: white;
 	position: relative;
 	margin-bottom: 18px;
 }
@@ -133,7 +133,11 @@ footer a {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
+}
+
+.box:hover .box-shape {
+	background-color: #dddddd;
 }
 
 
