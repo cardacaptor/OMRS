@@ -37,18 +37,20 @@
     <div class="w3ls-icons">
         <ul style="font-size: 30px">
         	<li>
-				<a href="admin/login.php">
-				<div class="box-shape">
-					<!-- <img src="admin/images/images.png" alt=""> -->
-				</div>
-				<p>Admin</p>
-				</a>
+				<a class="box" href="admin/login.php"> 
+                    <div class="box-shape">
+					    <img src="images/admin-icon.svg" alt="">
+				    </div>
+                    <h5 style="color:black;">Admin</h5>
+                </a>
 			</li>
             <li style="padding-left: 200px">
-				<div class="box-shape">
-					<img src="admin/images/images.png" alt="">
-				</div>
-				<a href="user/login.php"> User</a>
+				<a class="box" href="user/login.php"> 
+                    <div class="box-shape">
+					    <img src="images/user-icon.svg" alt="">
+				    </div>
+                    <h5 style="color:black;">User</h5>
+                </a>
 		</li>
         </ul>
     </div>
