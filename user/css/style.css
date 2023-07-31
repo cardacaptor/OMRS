@@ -136,14 +136,15 @@ input {
     cursor: pointer;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 1rem;
 }
+
 .form-group a {
     text-decoration: none;
     color: black;
 }
 
-.form-group:hover{
-    color: rebeccapurple;
+.form-group a:hover {
+    color: #3ABBA4;
 }
