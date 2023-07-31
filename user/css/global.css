@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+:root {
+    /* fonts */
+    --font-roboto: Roboto;
+    --font-inter: Inter;
+    --font-footlight-mt-light: "Footlight MT Light";
+
+    /* font sizes */
+    --font-size-xs: 12px;
+
+    /* Colors */
+    --color-black: #000;
+    --color-white: #fff;
+    --color-gray-100: rgba(0, 0, 0, 0.2);
+
+    /* border radiuses */
+    --br-mini: 15px;
+}

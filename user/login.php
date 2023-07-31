@@ -40,49 +40,43 @@ echo "<script>alert('Invalid Details');</script>";
     <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
 
-    <!-- Amanda CSS -->
-    <link rel="stylesheet" href="css/amanda.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Footlight MT Light:wght@400&display=swap" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
   </head>
 
   <body>
 
-    <div class="am-signin-wrapper">
-      <div class="am-signin-box">
-        <div class="row no-gutters">
-          <div class="col-lg-5">
-            <div>
-              <h2>OMRS</h2>
-              <p>Welcome to User panel </p>
-              <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.</p>
-
-              <hr>
-              <p><br> <a href="../index.php">Back Home</a></p>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <h5 class="tx-gray-800 mg-b-25">Signin to Your Account</h5>
- <form class="form-auth-small" action="" method="post">
-            <div class="form-group">
-              <label class="form-control-label">Mobile Number:</label>
-              <input type="text" class="form-control" placeholder="Mobile Number" required="true" name="mobno" maxlength="10" pattern="[0-9]+" >
-            </div><!-- form-group -->
-
-            <div class="form-group">
-              <label class="form-control-label">Password:</label>
-              <input type="password" class="form-control" placeholder="Password" name="password" required="true" value="">
-            </div><!-- form-group -->
-<div class="form-group mg-b-0" style="padding-top: 0px"><a href="forgot-password.php">Reset password</a></div>
-           
-
-            <button type="submit" class="btn btn-block" name="login">Sign In</button>
-             <div class="form-group mg-b-20" style="padding-top: 5%"><a href="signup.php">Not registered yet | Click here for registration </a></div>
-          </div>
-         </form>
-        </div><!-- row -->
-        <p class="tx-center tx-white-5 tx-12 mg-t-15">Copyright &copy; 2020. Online Marriage Registration System</p>
-      </div><!-- signin-box -->
-    </div><!-- am-signin-wrapper -->
-
+  <a href="../index.php" class="back-arrow">&#8592;</a>
+    <div class="bigBox">
+        <h1 style="text-align: center;">Online Marriage Registration</h1>
+        <div class="overlayBox">
+            <form class="form-auth-small" action="" method="post">
+                <div id="leftBox">
+                    <div class="image-1-wrapper">
+                        <img class="image-1-icon" alt="" src="images/image-1@2x.png" />
+                    </div>
+                    <div class="welcome1">WELCOME</div>
+                    <img class="wed-copy-3" alt="" src="images/wed-copy-3@2x.png" />
+                    <div class="dont-have-an">Don't have an account?</div>
+                    <a href="signup.php" class="sign-up-wrapper">Sign Up</a>
+                </div>
+                <div class="rightbox">
+                    <h1>Sign In</h1>
+                    <p>Mobile Number</p>
+                    <input type="text" placeholder="Enter Number" required="true" name="mobno" maxlength="10" pattern="[0-9]+">
+                    <p>Password</p>
+                    <input type="password" placeholder="Enter Password" name="password" required="true" value="">
+                    <br><br>
+                    <div class="form-group"><a href="forgot-password.php">Reset password</a></div>
+                    <button type="submit" name="login" class="log-btn">Sign In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/load.js"></script>
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/popper.js/popper.js"></script>
     <script src="lib/bootstrap/bootstrap.js"></script>

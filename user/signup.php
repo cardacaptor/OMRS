@@ -5,7 +5,6 @@ include('includes/dbconnection.php');
 if(isset($_POST['submit']))
   {
     $fname=$_POST['fname'];
-    $lname=$_POST['lname'];
     $mobno=$_POST['mobno'];
     $add=$_POST['address'];
     $password=md5($_POST['password']);
@@ -16,10 +15,9 @@ if(isset($_POST['submit']))
     $results = $query -> fetchAll(PDO::FETCH_OBJ);
 if($query -> rowCount() == 0)
 {
-$sql="Insert Into tbluser(FirstName,LastName,MobileNumber,Address,Password)Values(:fname,:lname,:mobno,:add,:password)";
+$sql="Insert Into tbluser(FirstName,MobileNumber,Address,Password)Values(:fname,:mobno,:add,:password)";
 $query = $dbh->prepare($sql);
 $query->bindParam(':fname',$fname,PDO::PARAM_STR);
-$query->bindParam(':lname',$lname,PDO::PARAM_STR);
 $query->bindParam(':mobno',$mobno,PDO::PARAM_INT);
 $query->bindParam(':add',$add,PDO::PARAM_STR);
 
@@ -58,60 +56,50 @@ echo "<script>alert('This Mobile Number already exist. Please try again');</scri
     <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Footlight MT Light:wght@400&display=swap" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" />
+
     <!-- Amanda CSS -->
-    <link rel="stylesheet" href="css/amanda.css">
+    <!-- <link rel="stylesheet" href="css/amanda.css"> -->
   </head>
 
   <body>
-
-    <div class="am-signin-wrapper">
-      <div class="am-signin-box">
-        <div class="row no-gutters">
-          <div class="col-lg-5">
-            <div>
-              <h2>amanda</h2>
-              <p>The Responsive Bootstrap 4 Admin Template</p>
-              <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.</p>
-
-              <hr>
-              <p><br> <a href="../index.php">Back Home</a></p>
+  <a href="../index.php" class="back-arrow">&#8592;</a>
+    <div class="bigBox">
+      <h1 style="text-align: center;">Online Marriage Registration</h1>
+      <div class="overlayBox">
+      <form class="form-auth-small" action="" method="post">
+          <div id="leftBox">
+            <div class="image-1-wrapper">
+              <img class="image-1-icon" alt="" src="images/image-1@2x.png" />
             </div>
+            <div class="welcome1">WELCOME</div>
+            <img class="wed-copy-3" alt="" src="images/wed-copy-3@2x.png" />
+            <div class="dont-have-an" style="top: 370px;">Already have an account?</div>
+            <a href="login.php" class="sign-up-wrapper" style="top: 394px;">Sign In</a>
           </div>
-          <div class="col-lg-7">
-            <h5 class="tx-gray-800 mg-b-25">User Registration Form</h5>
- <form class="form-auth-small" action="" method="post">
-            <div class="form-group">
-              <label class="form-control-label">First Name:</label>
-              <input type="text" class="form-control" placeholder="First Name" required="true" name="fname" value="" >
-            </div><!-- form-group -->
-<div class="form-group">
-              <label class="form-control-label">Last Name:</label>
-              <input type="text" class="form-control" placeholder="Last Name" required="true" name="lname" value="" >
-            </div>
-            <div class="form-group">
-              <label class="form-control-label">Mobile Number:</label>
-              <input type="text" class="form-control" placeholder="Mobile Number" required="true" name="mobno"  maxlength="10" pattern="[0-9]+" value="" >
-            </div>
-            <div class="form-group">
-              <label class="form-control-label">Address:</label>
-              <input type="text" class="form-control" placeholder="Address" required="true" name="address" value="" >
-            </div>
-            <div class="form-group">
-              <label class="form-control-label">Password:</label>
-              <input type="password" class="form-control" placeholder="Password" name="password" required="true" value="">
-            </div><!-- form-group -->
+            
 
-           
-
-            <button type="submit" class="btn btn-block" name="submit">Sign Up</button>
-             <div class="form-group mg-b-20" style="padding-top: 20px"><a href="login.php">Do you have an account ? || signin</a></div>
+          <div class="rightbox sign-up-box">
+            <h1>Sign Up</h1>
+            <label>Full name</label><br>
+            <input type="text" required="true" name="fname" value=""><br><br>
+            <label>Mobile Number</label><br>
+            <input type="text" required="true" name="mobno"  maxlength="10" pattern="[0-9]+" value=""><br><br>
+            <label>Address</label><br>
+            <input type="text" required="true" name="address" value=""><br><br>
+            <label>Password</label><br>
+            <input type="password" name="password" required="true" value=""><br><br>
+              <button type="submit" name="submit" class="log-btn">Sign Up</button>
           </div>
-         </form>
-        </div><!-- row -->
-        <p class="tx-center tx-white-5 tx-12 mg-t-15">Copyright &copy; 2017. All Rights Reserved. Amanda by ThemePixels</p>
-      </div><!-- signin-box -->
-    </div><!-- am-signin-wrapper -->
+        </form>
+      </div>
+    </div>
 
+    <script src="js/load.js"></script>
     <script src="lib/jquery/jquery.js"></script>
     <script src="lib/popper.js/popper.js"></script>
     <script src="lib/bootstrap/bootstrap.js"></script>

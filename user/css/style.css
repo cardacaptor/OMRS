@@ -1,0 +1,149 @@
+body {
+    background-color: #93D0F2;
+}
+
+.bigBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlayBox {
+    width: 556px;
+    height: 380px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+#leftBox {
+    width: 278px;
+    height: 380px;
+    background: linear-gradient(180deg, #3ABBA4 0.74%, rgba(217, 255, 227, 0.81) 99.99%, rgba(210, 255, 223, 0.80) 100%);
+    border-radius: 15px;
+    border: 1px solid #000;
+    transition: transform 330ms ease-in-out;
+}
+
+.wed-copy-3 {
+    position: absolute;
+    top: 210px;
+    left: 1px;
+    width: 278px;
+    height: 144px;
+    object-fit: cover;
+}
+
+.image-1-icon,
+.image-1-wrapper {
+    position: absolute;
+    width: 42px;
+    height: 38.59px;
+}
+
+.image-1-icon {
+    top: 80px;
+    left: 0;
+    object-fit: cover;
+}
+
+.image-1-wrapper {
+    top: 33px;
+    left: 34px;
+}
+
+.welcome1 {
+    position: absolute;
+    top: 180px;
+    left: 56px;
+    font-size: 36px;
+    font-family: var(--font-footlight-mt-light);
+}
+
+.dont-have-an,
+.sign-up {
+    position: absolute;
+    top: 366px;
+    left: 35px;
+    font-weight: 300;
+}
+
+.sign-up {
+    top: 5px;
+    left: 12px;
+}
+
+.sign-in-parent,
+.sign-up-wrapper,
+.welcome {
+    position: absolute;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+}
+
+.sign-up-wrapper {
+    top: 390px;
+    left: 34px;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 69px;
+    height: 26px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.rightbox {
+    position: absolute;
+    right: 66px;
+    top: 100px;
+    transition: transform 330ms ease-in-out;
+}
+
+input {
+    height: 25px;
+    line-height: 1.25;
+    width: 100%;
+}
+
+.log-btn {
+    height: 34px;
+    width: 100%;
+    background-color: #1856B4;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+.log-btn:hover {
+    background-color: #3ABBA4;
+}
+
+.sign-up-box {
+    display: block;
+    position: absolute;
+    right: 60px;
+    top: 66px;
+}
+
+.back-arrow {
+    font-size: 80px;
+    position: relative;
+    left: 55px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+.form-group a {
+    text-decoration: none;
+    color: black;
+}
+
+.form-group:hover{
+    color: rebeccapurple;
+}
