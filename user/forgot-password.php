@@ -44,6 +44,7 @@ echo "<script>alert(' Mobile no is invalid');</script>";
 
     <!-- Amanda CSS -->
     <link rel="stylesheet" href="css/amanda.css">
+    <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript">
 function valid()
 {
@@ -63,10 +64,12 @@ return true;
     <div class="am-signin-wrapper">
       <div class="am-signin-box">
         <div class="row no-gutters">
-          <div class="col-lg-5">
+          <div class="col-lg-5" style="background: linear-gradient(180deg, #3ABBA4 0.74%, rgba(217, 255, 227, 0.81) 99.99%, rgba(210, 255, 223, 0.80) 100%);">
             <div>
-              <h2>OMRS</h2>
-              <p>Reset Your Passowrd</p>
+              <div class="image-1-wrapper" style="top: -56px; left: 21px;">
+                <img class="image-1-icon" alt="" src="images/image-1@2x.png" />
+              </div>
+              <h2>Reset Your Passowrd</h2>
               <p>Please fill the following detail to reset the password.</p>
 
               <hr>
@@ -98,7 +101,6 @@ return true;
           </div>
          </form>
         </div><!-- row -->
-        <p class="tx-center tx-white-5 tx-12 mg-t-15">Copyright &copy; 2020. Online Marriage Registration Systems</p>
       </div><!-- signin-box -->
     </div><!-- am-signin-wrapper -->
 
