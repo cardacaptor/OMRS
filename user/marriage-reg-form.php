@@ -220,7 +220,7 @@ include_once('includes/sidebar.php');
                  <textarea type="file" name="haddress" value="" required="true" class="form-control"></textarea>
                 </div>
               </div>
-              <div class="row mg-t-20">
+              <!-- <div class="row mg-t-20">
                 <label class="col-sm-4 form-control-label">Zipcode: <span class="tx-danger">*</span></label>
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                   <input type="text" name="hzipcode" value=""  class="form-control" required='true' maxlength="6">
@@ -231,9 +231,9 @@ include_once('includes/sidebar.php');
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                   <input type="text" name="hstate" value=""  class="form-control" required='true'>
                 </div>
-              </div>
+              </div> -->
                <div class="row mg-t-20">
-                <label class="col-sm-4 form-control-label">Enter Adahar Number: <span class="tx-danger">*</span></label>
+                <label class="col-sm-4 form-control-label">Enter Citizenship Number: <span class="tx-danger">*</span></label>
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                  <input type="text" name="hadharno" value="" required="true" class="form-control" maxlength="12">
                 </div>
@@ -282,7 +282,7 @@ include_once('includes/sidebar.php');
                  <textarea type="text" name="waddress" value="" required="true" class="form-control"></textarea>
                 </div>
               </div>
-              <div class="row mg-t-20">
+              <!-- <div class="row mg-t-20">
                 <label class="col-sm-4 form-control-label">Zipcode: <span class="tx-danger">*</span></label>
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                   <input type="text" name="wzipcode" value=""  class="form-control" required='true' maxlength="6">
@@ -293,9 +293,9 @@ include_once('includes/sidebar.php');
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                   <input type="text" name="wstate" value=""  class="form-control" required='true'>
                 </div>
-              </div>
+              </div> -->
                <div class="row mg-t-20">
-                <label class="col-sm-4 form-control-label">Enter Adahar Number: <span class="tx-danger">*</span></label>
+                <label class="col-sm-4 form-control-label">Enter Citizenship Number: <span class="tx-danger">*</span></label>
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                  <input type="text" name="wadharno" value="" required="true" class="form-control" maxlength="12">
                 </div>
@@ -328,7 +328,7 @@ include_once('includes/sidebar.php');
                 </div>
               </div>
               <hr />
-              <div class="row">
+              <!-- <div class="row">
                 <label class="col-sm-4 form-control-label">Full Name of Witness: <span class="tx-danger">*</span></label>
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                   <input type="text" name="witnessnamet" value="" class="form-control" required='true'>
@@ -339,7 +339,7 @@ include_once('includes/sidebar.php');
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                  <textarea type="text" name="waddressthird" value="" required="true" class="form-control"></textarea>
                 </div>
-              </div>
+              </div> -->
              <div class="form-layout-footer mg-t-30">
              <p style="text-align: center;"><button class="btn btn-info mg-r-5"  name="submit" id="submit">ADD</button></p>
                 </form>

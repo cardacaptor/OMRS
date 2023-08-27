@@ -63,7 +63,9 @@ if($query->rowCount() > 0)
 foreach($results as $row)
 {               ?>
                     <h4>Welcome to Our System || <?php  echo $row->FirstName;?> <?php  echo $row->LastName;?></h4><?php $cnt=$cnt+1;}} ?>
-                    
+                    <h3>Marriage Registration in Nepal (2080)</h3>
+                    <h6>Marriage is the process of the establishment of relations between two persons which creates their rights, duties, responsibilities, and privileges.
+                        In Nepal, all the proceedings related to the registration of marriage are administered by the chapter of the Marriage of civil code 2017 (2074) and the Marriage Registration Act 2028.</h6>
                   </div>
                                   </div><!-- d-flex -->
                
