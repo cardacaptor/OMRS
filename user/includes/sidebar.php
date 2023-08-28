@@ -12,7 +12,7 @@
             <li class="nav-item">
               <a href="dashboard.php" class="nav-link">
                 <i class="icon ion-ios-home-outline"></i>
-                <span>Dashboard</span>
+                <span>Home</span>
               </a>
             </li><!-- nav-item -->
             <li class="nav-item">
@@ -30,12 +30,13 @@
              
             </li>
          
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="search.php" class="nav-link">
                 <i class="icon ion-search"></i>
                 <span>Search</span>
               </a>
-            </li><!-- nav-item -->
+            </li> -->
+            <!-- nav-item -->
           </ul>
         </div><!-- #mainMenu -->
  

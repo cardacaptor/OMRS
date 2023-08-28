@@ -351,7 +351,6 @@ include_once('includes/sidebar.php');
 
 
       </div><!-- am-pagebody -->
-     <?php include_once('includes/footer.php');?>
     </div><!-- am-mainpanel -->
 
     <script src="lib/jquery/jquery.js"></script>

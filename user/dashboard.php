@@ -19,10 +19,9 @@ if (strlen($_SESSION['omrsuid']==0)) {
     <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <link href="lib/jquery-toggles/toggles-full.css" rel="stylesheet">
-    <link href="lib/rickshaw/rickshaw.min.css" rel="stylesheet">
 
     <!-- Amanda CSS -->
-    <link rel="stylesheet" href="css/amanda.css">
+    <link rel="stylesheet" href="css/amanda.css?v=<?php echo time(); ?>">
   </head>
 
   <body>
@@ -33,7 +32,7 @@ if (strlen($_SESSION['omrsuid']==0)) {
 
     <div class="am-mainpanel">
       <div class="am-pagetitle">
-        <h5 class="am-title">Dashboard</h5>
+        <h5 class="am-title">Home</h5>
         <form id="searchBar" class="search-bar" action="index.html">
           <div class="form-control-wrapper">
             <input type="search" class="form-control bd-0" placeholder="Search...">
@@ -47,12 +46,12 @@ if (strlen($_SESSION['omrsuid']==0)) {
           <div class="col-lg-12">
             <div class="card">
               <div id="rs1" class="wd-100p ht-200"></div>
-              <div class="overlay-body pd-x-20 pd-t-20">
+              <div class="overlay-body">
                 <div class="d-flex justify-content-between">
                   <div>
                      <?php
 $uid=$_SESSION['omrsuid'];
-$sql="SELECT FirstName,LastName from  tbluser where ID=:uid";
+$sql="SELECT FirstName from  tbluser where ID=:uid";
 $query = $dbh -> prepare($sql);
 $query->bindParam(':uid',$uid,PDO::PARAM_STR);
 $query->execute();
@@ -62,11 +61,19 @@ if($query->rowCount() > 0)
 {
 foreach($results as $row)
 {               ?>
-                    <h4>Welcome to Our System || <?php  echo $row->FirstName;?> <?php  echo $row->LastName;?></h4><?php $cnt=$cnt+1;}} ?>
+                    <?php $cnt=$cnt+1;}} ?>
                     <h3>Marriage Registration in Nepal (2080)</h3>
-                    <h6>Marriage is the process of the establishment of relations between two persons which creates their rights, duties, responsibilities, and privileges.
-                        In Nepal, all the proceedings related to the registration of marriage are administered by the chapter of the Marriage of civil code 2017 (2074) and the Marriage Registration Act 2028.</h6>
-                  </div>
+                    <br>
+                    <p>Marriage is the process of the establishment of relations between two persons which creates their rights, duties, responsibilities, and privileges.
+                        <br><br>In Nepal, all the proceedings related to the registration of marriage are administered by the chapter of the <span style="font-weight:bold;"><span style="text-decoration:underline;">Marriage of civil code</span> 2017 (2074)</span> and the Marriage Registration Act 2028.</p>
+                    <br>
+                        <h6>Who can marry in Nepal?</h6>
+                    <ul>
+                      <li><p>The male or female who doesn't have a wife or husband.</p></li>
+                      <li><p>The male or female who have completed the age of twenty years.</p></li>
+                      <li><p>Foreigners can register a marriage in Nepal after following all the legal formalities of Nepal.</p></li>
+                    </ul>
+                      </div>
                                   </div><!-- d-flex -->
                
               </div>
@@ -79,7 +86,6 @@ foreach($results as $row)
 
 
       </div><!-- am-pagebody -->
-     <?php include_once('includes/footer.php');?>
     </div><!-- am-mainpanel -->
 
     <script src="lib/jquery/jquery.js"></script>
@@ -88,7 +94,6 @@ foreach($results as $row)
     <script src="lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
     <script src="lib/jquery-toggles/toggles.min.js"></script>
     <script src="lib/d3/d3.js"></script>
-    <script src="lib/rickshaw/rickshaw.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?key=AIzaSyAEt_DBLTknLexNbTVwbXyq2HSf2UbRBU8"></script>
     <script src="lib/gmaps/gmaps.js"></script>
     <script src="lib/Flot/jquery.flot.js"></script>
