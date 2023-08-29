@@ -22,7 +22,7 @@ if (strlen($_SESSION['omrsaid']==0)) {
     <link href="lib/rickshaw/rickshaw.min.css" rel="stylesheet">
 
     <!-- Amanda CSS -->
-    <link rel="stylesheet" href="css/amanda.css">
+    <link rel="stylesheet" href="css/amanda.css?v=<?php echo time(); ?>">
   </head>
 
   <body>
@@ -141,7 +141,6 @@ $totalreg=$query->rowCount();
 
 
       </div><!-- am-pagebody -->
-     <?php include_once('includes/footer.php');?>
     </div><!-- am-mainpanel -->
 
     <script src="lib/jquery/jquery.js"></script>

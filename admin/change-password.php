@@ -54,7 +54,7 @@ echo '<script>alert("Your current password is wrong")</script>';
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- Amanda CSS -->
-    <link rel="stylesheet" href="css/amanda.css">
+    <link rel="stylesheet" href="css/amanda.css?v=<?php echo time(); ?>">
     <script type="text/javascript">
 function checkpass()
 {
@@ -125,7 +125,6 @@ include_once('includes/sidebar.php');
 
 
       </div><!-- am-pagebody -->
-     <?php include_once('includes/footer.php');?>
     </div><!-- am-mainpanel -->
 
     <script src="lib/jquery/jquery.js"></script>

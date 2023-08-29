@@ -2,14 +2,15 @@
       <div class="am-header-left">
         <a id="naviconLeft" href="" class="am-navicon d-none d-lg-flex"><i class="icon ion-navicon-round"></i></a>
         <a id="naviconLeftMobile" href="" class="am-navicon d-lg-none"><i class="icon ion-navicon-round"></i></a>
-        <a href="dashboard.php" class="am-logo">Online Marriage Registration System</a>
+        <img height="34" class="pr-2" src="images/image-1@2x.png" alt="LOGO">
       </div><!-- am-header-left -->
 
+      <a href="dashboard.php" class="am-logo text-center">Online Marriage Registration System</a>
       <div class="am-header-right">
        
         <div class="dropdown dropdown-profile">
           <a href="user-profile.php" class="nav-link nav-link-profile" data-toggle="dropdown">
-            <img src="img/images.png" class="wd-32 rounded-circle" alt="">
+            <!-- <img src="img/images.png" class="wd-32 rounded-circle" alt=""> -->
             <?php
 $uid=$_SESSION['omrsuid'];
 $sql="SELECT FirstName,MobileNumber from  tbluser where ID=:uid";

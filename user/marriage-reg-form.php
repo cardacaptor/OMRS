@@ -16,23 +16,17 @@ $hreligion=$_POST['hreligion'];
 $hdob=$_POST['hdob'];
 $hsbmarriage=$_POST['hsbmarriage'];
 $haddress=$_POST['haddress'];
-$hzipcode=$_POST['hzipcode'];
-$hstate=$_POST['hstate'];
 $hadharno=$_POST['hadharno'];
 $nofwife=$_POST['nofwife'];
 $wreligion=$_POST['wreligion'];
 $wdob=$_POST['wdob'];
 $wsbmarriage=$_POST['wsbmarriage'];
 $waddress=$_POST['waddress'];
-$wzipcode=$_POST['wzipcode'];
-$wstate=$_POST['wstate'];
 $wadharno=$_POST['wadharno'];
 $witnessnamef=$_POST['witnessnamef'];
 $waddressfirst=$_POST['waddressfirst'];
 $witnessnames=$_POST['witnessnames'];
 $waddresssec=$_POST['waddresssec'];
-$witnessnamet=$_POST['witnessnamet'];
-$waddressthird=$_POST['waddressthird'];
 //husband image
 $himg=$_FILES["husimage"]["name"];
 $extension1 = substr($himg,strlen($himg)-4,strlen($himg));
@@ -68,7 +62,7 @@ $query-> execute();
 {
 
 
-$sql="insert into tblregistration(RegistrationNumber,UserID,DateofMarriage,HusbandName,HusImage,HusbandReligion,Husbanddob,HusbandSBM,HusbandAdd,HusbandZipcode,HusbandState,HusbandAdharno,WifeName,WifeImage,WifeReligion,Wifedob,WifeSBM,WifeAdd,WifeZipcode,WifeState,WifeAdharNo,WitnessNamefirst,WitnessAddressFirst,WitnessNamesec,WitnessAddresssec,WitnessNamethird,WitnessAddressthird)values(:regnumber,:uid,:dom,:nofhusband,:husimg,:hreligion,:hdob,:hsbmarriage,:haddress,:hzipcode,:hstate,:hadharno,:nofwife,:wifeimg,:wreligion,:wdob,:wsbmarriage,:waddress,:wzipcode,:wstate,:wadharno,:witnessnamef,:waddressfirst,:witnessnames,:waddresssec,:witnessnamet,:waddressthird)";
+$sql="insert into tblregistration(RegistrationNumber,UserID,DateofMarriage,HusbandName,HusImage,HusbandReligion,Husbanddob,HusbandSBM,HusbandAdd,HusbandAdharno,WifeName,WifeImage,WifeReligion,Wifedob,WifeSBM,WifeAdd,WifeAdharNo,WitnessNamefirst,WitnessAddressFirst,WitnessNamesec,WitnessAddresssec)values(:regnumber,:uid,:dom,:nofhusband,:husimg,:hreligion,:hdob,:hsbmarriage,:haddress,:hadharno,:nofwife,:wifeimg,:wreligion,:wdob,:wsbmarriage,:waddress,:wadharno,:witnessnamef,:waddressfirst,:witnessnames,:waddresssec)";
 $query=$dbh->prepare($sql);
 $query->bindParam(':regnumber',$regnumber,PDO::PARAM_STR);
 $query->bindParam(':uid',$uid,PDO::PARAM_STR);
@@ -79,8 +73,6 @@ $query->bindParam(':hreligion',$hreligion,PDO::PARAM_STR);
 $query->bindParam(':hdob',$hdob,PDO::PARAM_STR);
 $query->bindParam(':hsbmarriage',$hsbmarriage,PDO::PARAM_STR);
 $query->bindParam(':haddress',$haddress,PDO::PARAM_STR);
-$query->bindParam(':hzipcode',$hzipcode,PDO::PARAM_STR);
-$query->bindParam(':hstate',$hstate,PDO::PARAM_STR);
 $query->bindParam(':hadharno',$hadharno,PDO::PARAM_STR);
 $query->bindParam(':nofwife',$nofwife,PDO::PARAM_STR);
 $query->bindParam(':wifeimg',$wifeimg,PDO::PARAM_STR);
@@ -88,15 +80,11 @@ $query->bindParam(':wreligion',$wreligion,PDO::PARAM_STR);
 $query->bindParam(':wdob',$wdob,PDO::PARAM_STR);
 $query->bindParam(':wsbmarriage',$wsbmarriage,PDO::PARAM_STR);
 $query->bindParam(':waddress',$waddress,PDO::PARAM_STR);
-$query->bindParam(':wzipcode',$wzipcode,PDO::PARAM_STR);
-$query->bindParam(':wstate',$wstate,PDO::PARAM_STR);
 $query->bindParam(':wadharno',$wadharno,PDO::PARAM_STR);
 $query->bindParam(':witnessnamef',$witnessnamef,PDO::PARAM_STR);
 $query->bindParam(':waddressfirst',$waddressfirst,PDO::PARAM_STR);
 $query->bindParam(':witnessnames',$witnessnames,PDO::PARAM_STR);
 $query->bindParam(':waddresssec',$waddresssec,PDO::PARAM_STR);
-$query->bindParam(':witnessnamet',$witnessnamet,PDO::PARAM_STR);
-$query->bindParam(':waddressthird',$waddressthird,PDO::PARAM_STR);
  $query->execute();
 
    $LastInsertId=$dbh->lastInsertId();

@@ -24,7 +24,7 @@ if (strlen($_SESSION['omrsuid']==0)) {
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- Amanda CSS -->
-    <link rel="stylesheet" href="css/amanda.css">
+    <link rel="stylesheet" href="css/amanda.css?v=<?php echo time(); ?>">
     <script type="text/javascript">     
     function PrintDiv() {    
        var divToPrint = document.getElementById('divToPrint');
@@ -61,7 +61,7 @@ include_once('includes/sidebar.php');
               <?php
                                $vid=$_GET['viewid'];
 
-$sql="SELECT tblregistration.*,tbluser.FirstName,tbluser.LastName,tbluser.MobileNumber,tbluser.Address from  tblregistration join  tbluser on tblregistration.UserID=tbluser.ID where tblregistration.ID=:vid";
+$sql="SELECT tblregistration.*,tbluser.FirstName,tbluser.MobileNumber,tbluser.Address from  tblregistration join  tbluser on tblregistration.UserID=tbluser.ID where tblregistration.ID=:vid";
 $query = $dbh -> prepare($sql);
 $query-> bindParam(':vid', $vid, PDO::PARAM_STR);
 $query->execute();
@@ -107,7 +107,7 @@ Photo of Groom
                 </tr>
 <tr>
 <th>Resident at:</th>  
-<td><?php  echo $row->HusbandAdd;?>,<?php  echo $row->HusbandZipcode;?>,<?php  echo $row->HusbandState;?></td>
+<td><?php  echo $row->HusbandAdd;?></td>
 </tr>
 
 <tr>
@@ -116,7 +116,7 @@ Photo of Groom
 </tr>
 
 <tr>
-<th>Aadhar Number:</th>
+<th>Citizenship Number:</th>
 <td><?php  echo $row->HusbandAdharno;?></td>  
 </tr>
        
@@ -140,7 +140,7 @@ Photo of Groom
              </tr>
                 <tr>
                <th>Resident at:</th>
-               <td> <?php  echo $row->WifeAdd;?>,<?php  echo $row->WifeZipcode;?>,<?php  echo $row->WifeState;?></td>
+               <td> <?php  echo $row->WifeAdd;?></td>
              </tr>
      <tr>
                <th>Date of Birth:</th>
@@ -148,7 +148,7 @@ Photo of Groom
              </tr>
 
   <tr>
-               <th>Aadhar Number:</th>
+               <th>Citizenship Number:</th>
                <td> <?php  echo $row->WifeAdharNo;?></td>
              </tr>
 
@@ -175,14 +175,6 @@ Photo of Groom
                   <td><?php  echo $row->WitnessNamesec;?></td>
                   <td><?php  echo $row->WitnessAddresssec;?></td>
                 </tr>
-
-                <tr>
-                  <th>3.</th>
-                  <td><?php  echo $row->WitnessAddressthird;?></td>
-                  <td><?php  echo $row->WitnessAddressthird;?></td>
-                </tr>
-
-
               </tbody>
             </table>
 
@@ -201,8 +193,6 @@ Photo of Groom
         </div><!-- row -->
 
 
-      
-     <?php include_once('includes/footer.php');?>
     </div><!-- am-mainpanel -->
 
     <script src="lib/jquery/jquery.js"></script>

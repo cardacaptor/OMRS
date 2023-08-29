@@ -2,9 +2,10 @@
       <div class="am-header-left">
         <a id="naviconLeft" href="" class="am-navicon d-none d-lg-flex"><i class="icon ion-navicon-round"></i></a>
         <a id="naviconLeftMobile" href="" class="am-navicon d-lg-none"><i class="icon ion-navicon-round"></i></a>
-        <a href="index.html" class="am-logo">Online Marriage Registration System</a>
+        <img height="34" class="pr-2" src="images/nepal-govt.png" alt="LOGO">
       </div><!-- am-header-left -->
 
+      <a href="index.html" class="am-logo">Online Marriage Registration System</a>
       <div class="am-header-right">
         <div class="dropdown dropdown-notification">
           <a href="" class="nav-link pd-x-7 pos-relative" data-toggle="dropdown">

@@ -1,7 +1,7 @@
    <div class="am-sideleft">
       <ul class="nav am-sideleft-tab">
       <li style="width:300px">
-          <a href="#mainMenu" class="nav-link active"><i class="icon ion-ios-home-outline tx-24"></i></a>
+          <!-- <a href="#mainMenu" class="nav-link active"><i class="icon ion-ios-home-outline tx-24"></i></a> -->
         </li>
       </ul>
 
@@ -35,12 +35,13 @@
            
             </li>
          
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a href="search.php" class="nav-link">
                 <i class="icon ion-search"></i>
                 <span>Search</span>
               </a>
-            </li><!-- nav-item -->
+            </li> -->
+            <!-- nav-item -->
           </ul>
         </div><!-- #mainMenu -->
 

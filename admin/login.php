@@ -53,7 +53,7 @@ echo "<script>alert('Invalid Details');</script>";
     <link href="lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
 
     <!-- Amanda CSS -->
-    <link rel="stylesheet" href="css/amanda.css">
+    <link rel="stylesheet" href="css/amanda.css?v=<?php echo time(); ?>">
   </head>
 
   <body>
@@ -63,10 +63,10 @@ echo "<script>alert('Invalid Details');</script>";
         <div class="row no-gutters">
           <div class="col-lg-5">
             <div>
+            <img height="60" class="pr-2" src="images/nepal-govt.png" alt="LOGO">
               <h2>OMRS</h2>
               <p>Welcome to Admin Panel</p>
-              <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate.</p>
-
+              
               <hr>
               <p><br> <a href="../index.php">Back Home</a></p>
             </div>
@@ -96,7 +96,7 @@ echo "<script>alert('Invalid Details');</script>";
           </div>
          </form>
         </div><!-- row -->
-        <p class="tx-center tx-white-5 tx-12 mg-t-15">Online Marriage Registration System @ 2020</p>
+        <p class="tx-center tx-white-5 tx-12 mg-t-15">Online Marriage Registration System @ 2080</p>
       </div><!-- signin-box -->
     </div><!-- am-signin-wrapper -->
 

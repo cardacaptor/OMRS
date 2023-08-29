@@ -1,10 +1,10 @@
    <div class="am-sideleft">
-      <ul class="nav am-sideleft-tab">
+      <!-- <ul class="nav am-sideleft-tab">
         <li style="width:300px">
           <a href="#mainMenu" class="nav-link active"><i class="icon ion-ios-home-outline tx-24"></i></a>
         </li>
     
-      </ul>
+      </ul> -->
 
       <div class="tab-content">
         <div id="mainMenu" class="tab-pane active">

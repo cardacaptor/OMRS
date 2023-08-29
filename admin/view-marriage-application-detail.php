@@ -45,7 +45,7 @@ $query->bindParam(':vid',$vid,PDO::PARAM_STR);
     <link href="lib/select2/css/select2.min.css" rel="stylesheet">
 
     <!-- Amanda CSS -->
-    <link rel="stylesheet" href="css/amanda.css">
+    <link rel="stylesheet" href="css/amanda.css?v=<?php echo time(); ?>">
   </head>
 
   <body>
@@ -72,7 +72,7 @@ include_once('includes/sidebar.php');
             <?php
                                $vid=$_GET['viewid'];
 
-$sql="SELECT tblregistration.*,tbluser.FirstName,tbluser.LastName,tbluser.MobileNumber,tbluser.Address from  tblregistration join  tbluser on tblregistration.UserID=tbluser.ID where tblregistration.ID=:vid";
+$sql="SELECT tblregistration.*,tbluser.FirstName,tbluser.MobileNumber,tbluser.Address from  tblregistration join  tbluser on tblregistration.UserID=tbluser.ID where tblregistration.ID=:vid";
 $query = $dbh -> prepare($sql);
 $query-> bindParam(':vid', $vid, PDO::PARAM_STR);
 $query->execute();
@@ -92,14 +92,12 @@ foreach($results as $row)
 <td colspan="9" style="font-size:20px;color:blue">
  User Details</td></tr>
     <tr>
-    <th scope>First Name</th>
-    <td><?php  echo $row->FirstName;?></td>
-    <th scope>Last Name</th>
-    <td><?php  echo $row->LastName;?></td>
+    <th scope>Full Name</th>
+    <td colspan="2"><?php  echo $row->FirstName;?></td>
     <th scope>Mobile Number</th>
-    <td><?php  echo $row->MobileNumber;?></td>
+    <td colspan="2"><?php  echo $row->MobileNumber;?></td>
     <th>Address</th>
-    <td colspan="9"><?php  echo $row->Address;?></td>
+    <td colspan="2"><?php  echo $row->Address;?></td>
 
   </tr>
   
@@ -116,51 +114,45 @@ foreach($results as $row)
  Husband Details</td></tr>
  <tr>
     <th scope>Name</th>
-    <td><?php  echo $row->HusbandName;?></td>
+    <td colspan="2"><?php  echo $row->HusbandName;?></td>
     <th scope>Religion</th>
-    <td><?php  echo $row->HusbandReligion;?></td>
+    <td colspan="2"><?php  echo $row->HusbandReligion;?></td>
     <th scope>Date of Birth</th>
-    <td><?php  echo $row->Husbanddob;?></td>
-    <th scope>Status Before Marriage</th>
-    <td><?php  echo $row->HusbandSBM;?></td>
+    <td colspan="1"><?php  echo $row->Husbanddob;?></td>
+    <!-- <th scope></th>
+    <td colspan="2"></td> -->
       <td rowspan="2" style="text-align:center;"><img src="../user/images/<?php echo $row->HusImage;?>" width="250" height="200"><br />
 Photo of Groom
                   </td>
   </tr>
    <tr>
+    <th scope>Status Before Marriage</th>
+    <td colspan="2"><?php  echo $row->HusbandSBM;?></td>
     <th scope>Address</th>
-    <td><?php  echo $row->HusbandAdd;?></td>
-    <th scope>Zipcode</th>
-    <td><?php  echo $row->HusbandZipcode;?></td>
-    <th scope>State</th>
-    <td><?php  echo $row->HusbandState;?></td>
-    <th scope>Aadhar Number</th>
-    <td><?php  echo $row->HusbandAdharno;?></td>
+    <td colspan="2"><?php  echo $row->HusbandAdd;?></td>
+    <th scope>Citizenship Number</th>
+    <td colspan="1"><?php  echo $row->HusbandAdharno;?></td>
   </tr>
   <tr>
   <td colspan="8" style="font-size:20px;color:red">
  Wife Details</td></tr>
   <tr>
    <th scope>Name</th>
-    <td><?php  echo $row->WifeName;?></td>
+    <td colspan="2"><?php  echo $row->WifeName;?></td>
     <th scope>Religion</th>
-    <td><?php  echo $row->WifeReligion;?></td>
+    <td colspan="2"><?php  echo $row->WifeReligion;?></td>
     <th scope>Date of Birth</th>
-    <td><?php  echo $row->Wifedob;?></td>
-    <th scope>Status Before Marriage</th>
-    <td><?php  echo $row->WifeSBM;?></td>
+    <td colspan="1"><?php  echo $row->Wifedob;?></td>
       <td rowspan="2" style="text-align:center;"><img src="../user/images/<?php echo $row->WifeImage;?>" width="250" height="200"> <br />
                Photo of Bride</td>
   </tr>
    <tr>
+    <th scope>Status Before Marriage</th>
+    <td colspan="2"><?php  echo $row->WifeSBM;?></td>
     <th scope>Address</th>
-    <td><?php  echo $row->WifeAdd;?></td>
-    <th scope>Zipcode</th>
-    <td><?php  echo $row->WifeZipcode;?></td>
-    <th scope>State</th>
-    <td><?php  echo $row->WifeState;?></td>
-    <th scope>Aadhar Number</th>
-    <td><?php  echo $row->WifeAdharNo;?></td>
+    <td colspan="2"><?php  echo $row->WifeAdd;?></td>
+    <th scope>Citizenship Number</th>
+    <td colspan="1"><?php  echo $row->WifeAdharNo;?></td>
   </tr>
   <tr>
   <td colspan="8" style="font-size:20px;color:red">
@@ -182,12 +174,6 @@ Photo of Groom
     <td colspan="3"><?php  echo $row->WitnessNamesec;?></td>
     
     <td colspan="4"><?php  echo $row->WitnessAddresssec;?></td>
-  </tr>
- <tr>
-   <td colspan="2">3</td> 
-    <td colspan="2"><?php  echo $row->WitnessNamethird;?></td>
-    
-    <td colspan="4"><?php  echo $row->WitnessAddressthird;?></td>
   </tr>
   <tr>
     

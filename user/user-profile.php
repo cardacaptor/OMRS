@@ -9,13 +9,11 @@ if (strlen($_SESSION['omrsuid']==0)) {
   {
     $uid=$_SESSION['omrsuid'];
     $fname=$_POST['fname'];
-    $lname=$_POST['lname'];
 
   $add=$_POST['add'];
-  $sql="update tbluser set FirstName=:fname,LastName=:lname,Address=:add where ID=:uid";
+  $sql="update tbluser set FirstName=:fname,Address=:add where ID=:uid";
      $query = $dbh->prepare($sql);
      $query->bindParam(':fname',$fname,PDO::PARAM_STR);
-     $query->bindParam(':lname',$lname,PDO::PARAM_STR);
 
      $query->bindParam(':add',$add,PDO::PARAM_STR);
      $query->bindParam(':uid',$uid,PDO::PARAM_STR);
@@ -86,12 +84,12 @@ foreach($results as $row)
                   <input type="text" class="form-control" name="fname" value="<?php  echo $row->FirstName;?>" required="true" />
                 </div>
               </div><!-- row -->
-              <div class="row mg-t-20">
+              <!-- <div class="row mg-t-20">
                 <label class="col-sm-4 form-control-label">Last Name: <span class="tx-danger">*</span></label>
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
                   <input type="text" class="form-control" name="lname" value="<?php  echo $row->LastName;?>" required="true" />
                 </div>
-              </div>
+              </div> -->
               <div class="row mg-t-20">
                 <label class="col-sm-4 form-control-label">Mobile Number: <span class="tx-danger">*</span></label>
                 <div class="col-sm-8 mg-t-10 mg-sm-t-0">
@@ -122,7 +120,6 @@ foreach($results as $row)
 
 
       </div><!-- am-pagebody -->
-     <?php include_once('includes/footer.php');?>
     </div><!-- am-mainpanel -->
 
     <script src="lib/jquery/jquery.js"></script>
