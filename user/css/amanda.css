@@ -122,7 +122,7 @@ body {
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.5;
-  background-color: #D8DCE3;
+  background-color: #ECECEC;
 }
 
 [tabindex="-1"]:focus {
@@ -8740,14 +8740,14 @@ a.text-dark:focus, a.text-dark:hover {
 
 .btn-orange {
   color: #111;
-  background-color: #FB9337;
-  border-color: #fb861e;
+  background-color: #D91E23;
+  border-color: #D91E23;
 }
 
 .btn-orange:hover {
   color: #111;
-  background-color: #fa7f12;
-  border-color: #e16c05;
+  background-color: #D91E23;
+  border-color: #D91E23;
 }
 
 .btn-orange:focus, .btn-orange.focus {
@@ -12884,7 +12884,7 @@ textarea.parsley-success:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #232e40;
+  background-color: #1957B4;
   padding: 0 15px 0 0;
   z-index: 1000;
 }
@@ -13062,7 +13062,7 @@ textarea.parsley-success:focus {
   justify-content: center;
   font-size: 24px;
   line-height: 0;
-  color: #FB9337;
+  color: #D91E23;
 }
 
 .am-navicon i {
@@ -13070,7 +13070,7 @@ textarea.parsley-success:focus {
 }
 
 .am-navicon:hover, .am-navicon:focus {
-  color: #fb861e;
+  color: #D91E23;
 }
 
 .am-logo {
@@ -13237,7 +13237,7 @@ textarea.parsley-success:focus {
   left: -1px;
   right: -1px;
   height: 1px;
-  background-color: #FB9337;
+  background-color: #D91E23;
   top: 0;
   transition: all 0.2s ease-in-out;
   display: none;
@@ -13249,8 +13249,8 @@ textarea.parsley-success:focus {
 }
 
 .am-sideleft-tab .nav-link.active {
-  background-color: #2d3a50;
-  color: #FB9337;
+  background-color: #1957B4;
+  color: #ffffff;
 }
 
 .am-sideleft-tab .nav-link.active::after {
@@ -13371,7 +13371,7 @@ textarea.parsley-success:focus {
   align-items: center;
   justify-content: space-between;
   height: 60px;
-  background-color: #2d3a50;
+  background-color: #ffffff;
   transition: all 0.2s ease-in-out;
 }
 
@@ -13409,7 +13409,7 @@ textarea.parsley-success:focus {
   border: 0;
   padding-left: 15px;
   padding-right: 15px;
-  color: #964803;
+  color: #ffffff;
   box-shadow: none !important;
 }
 
@@ -13424,7 +13424,7 @@ textarea.parsley-success:focus {
 }
 
 .am-pagetitle .am-title {
-  color: rgba(255, 255, 255, 0.8);
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 2px;
